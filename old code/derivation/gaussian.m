@@ -1,0 +1,10 @@
+c = 50;
+sig = 10;
+x = linspace(0, 100);
+MF = exp(-(x-c).^2./(2*sig^2));
+h = plot(x, MF);
+grid on;
+set(h, 'linewidth', 2);
+title('gaussian(x, 50, 10)');
+xlabel('X');
+ylabel('Membership Function');
